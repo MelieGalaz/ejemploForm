@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="gracias.html">
+        <h2>Completa el formulario para inscribirte al curso</h2>
+        <fieldset>
+            <legend>Datos personales:</legend>
+            <div class="datos_personales">
+                <div class="input_container">
+                    <label for="input_nombre">Nombre</label>
+                    <input type="text" placeholder="nombre" name="nombre" class="form_input" required>
+                </div>
+
+
+                <div class="input_container">
+                    <label for="input_apellido">Apellido</label>
+                    <input type="text" placeholder="apellido" name="nombre" class="form_input" required>
+                </div>
+
+                <div class="input_container">
+                    <label for="input_email">E-mail</label>
+                    <input type="text" placeholder="e-mail" name="email" class="form_input" required>
+                </div>
+
+                <div class="input_container">
+                    <label for="input_telefono">Telefono</label>
+                    <input type="number" placeholder="Telefono" name="telefono" class="form_input" required>
+                </div>
+
+            </div>
+        </fieldset>
+        <div class="contenedor_cursos">
+            <fieldset>
+                <legend>Disponibilidad horaria:</legend>
+                <div class="input_container">
+                    <label for="checkbox_mañana">Mañana</label>
+                    <input type="checkbox" name="mañana" id="checkbox_mañana" cheched />
+                </div>
+
+                <div class="input_container">
+                    <label for="checkbox_tarde">Tarde</label>
+                    <input type="checkbox" name="tarde" id="checkbox_tarde" cheched />
+                </div>
+
+                <div class="input_container">
+                    <label for="checkbox_noche">Mañana</label>
+                    <input type="checkbox" name="noche" id="checkbox_noche" cheched />
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Curso de interes:</legend>
+                <div class="input_container">
+                    <label for="desarrollo_front">Desarrollo Frontend</label>
+                    <input type="radio" name="curso" id="desarrollo_front">
+                </div>
+
+                <div class="input_container">
+                    <label for="desarrollo_back">Desarrollo Backend</label>
+                    <input type="radio" name="curso" id="desarrollo_back">
+                </div>
+
+                <div class="input_container">
+                    <label for="fullstrack">Desarrollo fullstrack</label>
+                    <input type="radio" name="curso" id="fullstrack">
+                </div>
+            </fieldset>
+            <input type="submit" value="Enviar" />
+        </div>
+    </form>
+</body>
+
+</html>
